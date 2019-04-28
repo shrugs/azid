@@ -38,6 +38,8 @@ export default function App() {
           onError={function(...args) {
             console.log(...args);
           }}
+          serviceName="Test Service"
+          serviceId="com.test.service"
           onWallet={function(wallet) {
             setWallet(wallet);
             setLoggingIn(false);
