@@ -1,6 +1,5 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import decode from "jwt-decode";
 import { LoginButton } from "./LoginButton";
 
 const Container = styled.div`
@@ -13,15 +12,16 @@ const Container = styled.div`
 
 const Text = styled.p``;
 
-const Code = styled.code``;
+const Code = styled.code`
+  word-break: break-all;
+  margin: 1rem;
+`;
 
 const Button = styled.button``;
 
 export default function App() {
   const [isLoggingIn, setLoggingIn] = useState(false);
-  const [token, setToken] = useState();
-
-  const decoded = useMemo(() => (token ? decode(token) : null), [token]);
+  const [wallet, setWallet] = useState();
 
   return (
     <Container>
@@ -38,19 +38,17 @@ export default function App() {
           onError={function(...args) {
             console.log(...args);
           }}
-          onToken={function(token) {
-            setToken(token);
+          onWallet={function(wallet) {
+            setWallet(wallet);
             setLoggingIn(false);
           }}
         />
       )}
-      {token && (
+      {wallet && (
         <>
-          <Text>I just got a JWT back!</Text>
+          <Text>I just got a Wallet back!</Text>
           <Text>It looks like:</Text>
-          <Code>{token}</Code>
-          <Text>And decodes to:</Text>
-          <Code>{JSON.stringify(decoded)}</Code>
+          <Code>{JSON.stringify(wallet)}</Code>
         </>
       )}
     </Container>
