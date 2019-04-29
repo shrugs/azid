@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import Flex, { FlexItem } from "styled-flex-component";
 import { isValidPatp, isValidPatq, patp2dec, patq2hex } from "urbit-ob";
-import { argon2u, deriveNode } from "urbit-key-generation/dist";
+import { argon2u, deriveNode } from "urbit-key-generation";
 
 const stableIsValidPatp = (...args) => {
   try {
