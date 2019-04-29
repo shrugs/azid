@@ -15,4 +15,6 @@ Universal login + per-app isolation and a UX that's on-par with the web today. N
 
 ## TODO
 
+Actually sign the JWT using one of the keys derived from the master ticket (that can be referenced against the ethereum owner of that point). I don't know how to crypto, so I can't figure out how to turn the ethereum private key into the DER encoded ECDSA key that every JWK library expects, so ¯\\\_(ツ)\_/¯
+
 I'm designing a simple spec for services to request access policies to _other_ services in order to act on behalf of a user. This is like one more level of hierarchy applied to OAuth scopes, and I'm modelling it after AWS Role Policies.
