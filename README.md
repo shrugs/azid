@@ -5,7 +5,6 @@ Based on PayPal's work on zoid.
 
 https://azid.shrugs.now.sh
 
-## TODO:
+## TODO
 
-- accept point/ticket as input
-- integrate [keygen-js](https://github.com/urbit/keygen-js) for deriving service keyspace
+- [ ] Spec for requesting access policies an data ala oauth.
