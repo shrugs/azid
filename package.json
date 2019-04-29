@@ -31,7 +31,7 @@
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0",
     "styled-flex-component": "^3.0.0",
-    "urbit-key-generation": "https://github.com/urbit/keygen-js.git#jt-issue-62",
+    "urbit-key-generation": "^0.15.0",
     "urbit-ob": "^4.0.0",
     "zoid": "^9.0.22"
   }

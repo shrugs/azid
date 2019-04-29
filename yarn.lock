@@ -6134,9 +6134,10 @@ upath@^1.1.1:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.1.2.tgz#3db658600edaeeccbe6db5e684d67ee8c2acd068"
   integrity sha512-kXpym8nmDmlCBr7nKdIx8P2jNBa+pBpIUFRnKJ4dr8htyYGJFokkr2ZvERRtUN+9SY+JqXouNgUPtv6JQva/2Q==
 
-"urbit-key-generation@https://github.com/urbit/keygen-js.git#jt-issue-62":
-  version "0.14.1"
-  resolved "https://github.com/urbit/keygen-js.git#de713a305e49886c44c4d1e854dc8a414a82b8d4"
+urbit-key-generation@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/urbit-key-generation/-/urbit-key-generation-0.15.0.tgz#113bde52399544507e6eaf139dbee2a930c93666"
+  integrity sha512-fLuOmEvFNiolr0OJjVSEP8uCpavIAu77iIZyakG3cMNgB8ldqlif/Egf5QEmglWkwutSCDH2yGF0b8EnAR0czw==
   dependencies:
     argon2-wasm "^0.9.0"
     bip32 "^1.0.2"
